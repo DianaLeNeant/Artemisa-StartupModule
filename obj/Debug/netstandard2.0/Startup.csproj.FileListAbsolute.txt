@@ -1,0 +1,9 @@
+/Users/diana/Documents/Development/Artemisa Modules/Startup/obj/Debug/netstandard2.0/Startup.csprojAssemblyReference.cache
+/Users/diana/Documents/Development/Artemisa Modules/Startup/obj/Debug/netstandard2.0/Startup.csproj.CoreCompileInputs.cache
+/Users/diana/Documents/Development/Artemisa Modules/Startup/obj/Debug/netstandard2.0/Startup.AssemblyInfoInputs.cache
+/Users/diana/Documents/Development/Artemisa Modules/Startup/obj/Debug/netstandard2.0/Startup.AssemblyInfo.cs
+/Users/diana/Documents/Development/Artemisa Modules/Startup/bin/Debug/netstandard2.0/Startup.deps.json
+/Users/diana/Documents/Development/Artemisa Modules/Startup/bin/Debug/netstandard2.0/Startup.dll
+/Users/diana/Documents/Development/Artemisa Modules/Startup/bin/Debug/netstandard2.0/Startup.pdb
+/Users/diana/Documents/Development/Artemisa Modules/Startup/obj/Debug/netstandard2.0/Startup.dll
+/Users/diana/Documents/Development/Artemisa Modules/Startup/obj/Debug/netstandard2.0/Startup.pdb
