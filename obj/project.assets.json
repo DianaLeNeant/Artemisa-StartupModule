@@ -20,7 +20,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "NETStandard.Library/2.0.3": {
+      "NETStandard.Library/2.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -60,11 +60,10 @@
   },
   "libraries": {
     "Microsoft.CSharp/4.5.0": {
-      "sha512": "EGoBmf3Na2ppbhPePDE9PlX81r1HuOZH5twBrq7couJZiPTjUnD3648balerQJO6EJ8Sj+43+XuRwQ7r+3tE3w==",
+      "sha512": "yWWeTbGCzBOlRPWDCIxiTZW1ecZiMbao0ZT97KKEWdBhrLvUqU8RdzkhzuCRQzvoxzxlR7vytO43OOgFdkxv6g==",
       "type": "package",
       "path": "microsoft.csharp/4.5.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -128,12 +127,10 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -142,14 +139,14 @@
         "runtime.json"
       ]
     },
-    "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+    "NETStandard.Library/2.0.0": {
+      "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
       "type": "package",
-      "path": "netstandard.library/2.0.3",
+      "path": "netstandard.library/2.0.0",
       "files": [
-        ".nupkg.metadata",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "build/NETStandard.Library.targets",
         "build/netstandard2.0/NETStandard.Library.targets",
         "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
         "build/netstandard2.0/ref/System.AppContext.dll",
@@ -266,7 +263,7 @@
         "build/netstandard2.0/ref/netstandard.dll",
         "build/netstandard2.0/ref/netstandard.xml",
         "lib/netstandard1.0/_._",
-        "netstandard.library.2.0.3.nupkg.sha512",
+        "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
     },
@@ -316,28 +313,28 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Microsoft.CSharp >= 4.5.0",
-      "NETStandard.Library >= 2.0.3",
+      "NETStandard.Library >= 2.0.0",
       "OpenSSL.X509Certificate2.Provider >= 1.3.0"
     ]
   },
   "packageFolders": {
-    "/Users/diana/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Diana Celeste\\.nuget\\packages\\": {},
+    "C:\\dotnet\\2.0\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/diana/Documents/Development/Artemisa Modules/Startup/Startup.csproj",
+      "projectUniqueName": "C:\\Users\\Diana Celeste\\Documents\\Diana\\Startup Module\\Startup.csproj",
       "projectName": "Startup",
-      "projectPath": "/Users/diana/Documents/Development/Artemisa Modules/Startup/Startup.csproj",
-      "packagesPath": "/Users/diana/.nuget/packages/",
-      "outputPath": "/Users/diana/Documents/Development/Artemisa Modules/Startup/obj/",
+      "projectPath": "C:\\Users\\Diana Celeste\\Documents\\Diana\\Startup Module\\Startup.csproj",
+      "packagesPath": "C:\\Users\\Diana Celeste\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Diana Celeste\\Documents\\Diana\\Startup Module\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\dotnet\\2.0\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/diana/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Diana Celeste\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -359,19 +356,19 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
-          "Microsoft.CSharp": {
-            "target": "Package",
-            "version": "[4.5.0, )"
-          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.3, )",
+            "version": "2.0.0",
             "autoReferenced": true
+          },
+          "Microsoft.CSharp": {
+            "target": "Package",
+            "version": "4.5.0"
           },
           "OpenSSL.X509Certificate2.Provider": {
             "target": "Package",
-            "version": "[1.3.0, )"
+            "version": "1.3.0"
           }
         },
         "imports": [

@@ -7,3 +7,11 @@
 /Users/diana/Documents/Development/Artemisa Modules/Startup/bin/Debug/netstandard2.0/Startup.pdb
 /Users/diana/Documents/Development/Artemisa Modules/Startup/obj/Debug/netstandard2.0/Startup.dll
 /Users/diana/Documents/Development/Artemisa Modules/Startup/obj/Debug/netstandard2.0/Startup.pdb
+C:\Users\Diana Celeste\Documents\Diana\Startup Module\obj\Debug\netstandard2.0\Startup.csproj.CoreCompileInputs.cache
+C:\Users\Diana Celeste\Documents\Diana\Startup Module\obj\Debug\netstandard2.0\Startup.AssemblyInfoInputs.cache
+C:\Users\Diana Celeste\Documents\Diana\Startup Module\obj\Debug\netstandard2.0\Startup.AssemblyInfo.cs
+C:\Users\Diana Celeste\Documents\Diana\Startup Module\obj\Debug\netstandard2.0\Startup.dll
+C:\Users\Diana Celeste\Documents\Diana\Startup Module\obj\Debug\netstandard2.0\Startup.pdb
+C:\Users\Diana Celeste\Documents\Diana\Startup Module\bin\Debug\netstandard2.0\Startup.deps.json
+C:\Users\Diana Celeste\Documents\Diana\Startup Module\bin\Debug\netstandard2.0\Startup.dll
+C:\Users\Diana Celeste\Documents\Diana\Startup Module\bin\Debug\netstandard2.0\Startup.pdb

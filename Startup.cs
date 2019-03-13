@@ -9,6 +9,13 @@ namespace Artemisa
 {
     public class Startup
     {
+        private bool certE = false;
+        public bool certificateExists {
+            get {
+                return certE;
+            }
+        }
+
         public readonly string ModuleName = "Artemisa - Startup";
         public readonly string UploadsDirectory = "Uploads";
         public readonly string SSLDirectory = "SSL";
@@ -28,19 +35,23 @@ namespace Artemisa
 
             Parent.log("Directories check start.", this);
 
-            createIfNotExists("Uploads");
-            createIfNotExists("SSL");
-            createIfNotExists("Modules");
-            createIfNotExists("Media");
-            createIfNotExists("Templates");
-            createIfNotExists("Templates/Mail");
-            createIfNotExists("Templates/Documents");
-            createIfNotExists("Forms");
-            createIfNotExists("Config");
+            string[] dirs = new String[] {
+                "Uploads",
+                "SSL",
+                "Modules",
+                "Media",
+                "Templates",
+                "Templates/Mail",
+                "Templates/Documents",
+                "Forms",
+                "Config"
+            };
+            createIfNotExists(dirs);
 
             string certPath = onDir + "/" + SSLDirectory;
             if (!File.Exists(certPath  + "/certificate.ssl")) {
                 Parent.log("Certificate file not found at '" + certPath + "'.", this);
+                certE = false;
             } else {
                 string certificateText = File.ReadAllText(certPath + "/certificate.ssl");
                 string privateKeyText = File.ReadAllText(certPath + "/privatekey.ssl");
@@ -48,6 +59,7 @@ namespace Artemisa
                 ICertificateProvider provider = new CertificateFromFileProvider(certificateText, privateKeyText);
 
                 Parent.serverCertificate = provider.Certificate;
+                certE = true;
             }
 
             Parent.log("Directories check finished.", this);
@@ -55,6 +67,11 @@ namespace Artemisa
         
         private void createIfNotExists(string dir) {
             if (!Directory.Exists(onDir + "/" + dir)) Directory.CreateDirectory(onDir + "/" + dir);
+        }
+        private void createIfNotExists(string[] dir) {
+            for (int x = 0; x < dir.Length; x++) {
+                createIfNotExists(dir[x]);
+            }
         }
     }
 }
